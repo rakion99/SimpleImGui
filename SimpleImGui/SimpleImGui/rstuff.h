@@ -2,9 +2,9 @@
 #define x(x) (x - 0x400000 + (DWORD)GetModuleHandleA(0))
 
 typedef int(__cdecl *RPrint)(int, const char *, ...);
-RPrint r_Print = (RPrint)x(0x516FF0);
+RPrint r_Print = (RPrint)x(0x5248a0);//Roblox print address
 
-void RobloxPrint(const char * type, const char *message)
+void RobloxPrint(const char * type, const char *message)//Some gay shit as a simple test
 {
 	if (type == "info")
 	{
